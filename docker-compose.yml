@@ -1,0 +1,18 @@
+services:
+  web:
+    build: ./docker
+    ports:
+      - 8080:80
+    volumes:
+      - ./src:/var/www/html
+      - ./docker/web/vhost.conf:/etc/httpd/conf.d/vhost.conf
+    working_dir: /var/www/html
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: foo
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+    ports:
+      - 3306:3306
