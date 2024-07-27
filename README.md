@@ -12,11 +12,11 @@ OU1[Host OS]
 %%グループとサービス
 subgraph GS[Docker]
   subgraph GV["web (amazon linux 2023)"]
-    NW1{{"Apache<br>2.4"}}
-    CP1("Laravel<br>11")
+    NW1{{"Apache 2.4"}}
+    CP1("PHP 8.3<br>Node.js 20")
   end
   subgraph GV2["db (oracle linux 9)"]
-    DB1[("MySQL<br>8")]
+    DB1[("MySQL 8")]
   end
 end
 
@@ -24,6 +24,14 @@ end
 OU1 --> NW1
 NW1 --> CP1
 CP1 --> DB1
+
+%%グループのスタイル
+classDef SGS fill:#def,color:#07b,stroke:none
+classDef SGV fill:#333,color:#fff,stroke:#fff
+
+class GS SGS
+class GV SGV
+class GV2 SGV
 
 %%サービスのスタイル
 classDef SOU fill:#aaa,color:#fff,stroke:#fff
