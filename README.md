@@ -27,7 +27,7 @@ CP1 --> DB1
 
 %%グループのスタイル
 classDef SGS fill:#def,color:#07b,stroke:none
-classDef SGV fill:#333,color:#fff,stroke:#fff
+classDef SGV fill:#555,color:#fff,stroke:#fff
 
 class GS SGS
 class GV SGV
