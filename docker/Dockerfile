@@ -13,6 +13,10 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Make directory for php-fpm
 RUN mkdir /run/php-fpm
 
+# Add Node.js
+COPY --from=node:20-slim /usr/local/bin /usr/local/bin
+COPY --from=node:20-slim /usr/local/lib/node_modules /usr/local/lib/node_modules
+
 # Change UID, GID
 RUN usermod -u 1000 apache \
   && groupmod -g 1000 apache
