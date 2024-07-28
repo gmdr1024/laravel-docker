@@ -30,17 +30,17 @@ linkStyle 1 stroke:#222
 linkStyle 2 stroke:#222
 
 %%グループのスタイル
-classDef SGS fill:#def,color:#07b,stroke:07b
-classDef SGV fill:#555,color:#fff,stroke:#none
+classDef SGS fill:#def,color:#07b,stroke:#07b
+classDef SGV fill:#555,color:#fff,stroke:#555
 
 class GS SGS
 class GV SGV
 class GV2 SGV
 
 %%サービスのスタイル
-classDef SOU fill:#aaa,color:#fff,stroke:#fff
-classDef SNW fill:#84d,color:#fff,stroke:none
-classDef SCP fill:#e83,color:#fff,stroke:none
+classDef SOU fill:#aaa,color:#fff,stroke:#aaa
+classDef SNW fill:#84d,color:#fff,stroke:#fff
+classDef SCP fill:#e83,color:#fff,stroke:#fff
 classDef SDB fill:#46d,color:#fff,stroke:#fff
 
 class OU1 SOU
