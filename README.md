@@ -25,9 +25,13 @@ OU1 --> NW1
 NW1 --> CP1
 CP1 --> DB1
 
+linkStyle 0 stroke:#222
+linkStyle 1 stroke:#222
+linkStyle 2 stroke:#222
+
 %%グループのスタイル
-classDef SGS fill:#def,color:#07b,stroke:none
-classDef SGV fill:#555,color:#fff,stroke:#fff
+classDef SGS fill:#def,color:#07b,stroke:07b
+classDef SGV fill:#555,color:#fff,stroke:#none
 
 class GS SGS
 class GV SGV
